@@ -1,3 +1,5 @@
+require 'fighting.cs'
+
 class Scene
 
 end
