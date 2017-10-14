@@ -9,7 +9,6 @@ class RandRoom < Scene
   def initialize()
     enemies = rand(0..10)
     alive = Fight(enemies)
-    return alive
   end
 end
 
