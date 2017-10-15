@@ -4,7 +4,9 @@ class Fight
     @quant_aliens = quant_aliens
   end
 
-  
+  def fight
+    @quant_aliens.each {|x| alien[x] = Alien.new   }
+  end
 end
 
 class Being
@@ -12,14 +14,14 @@ class Being
 
 end
 
-class Player
+class Player < Being
   def initialize()
     @health = 100
     @power = 20
   end
 end
 
-class Alien
+class Alien < Being
   def initialize()
     @health = 20
     @power = 5
