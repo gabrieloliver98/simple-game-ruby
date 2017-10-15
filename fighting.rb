@@ -5,7 +5,12 @@ class Fight
   end
 
   def fight
-    @quant_aliens.each {|x| alien[x] = Alien.new   }
+    @quant_aliens.each {|x| alien[x] = Alien.new() }
+    count = 1
+    while @player.health > 0 ||
+      @player.hit(@quant_aliens - count)
+
+    end
   end
 end
 
