@@ -33,5 +33,11 @@ class InitialRoom < Scene
 end
 
 class FinalRoom < Scene
+  def self.enter()
+    puts "You achived the portal key"
+    puts "Now, you can get back home"
+    puts "Thanks for playing this game"
+    puts "See you next time!"
 
+  end
 end
