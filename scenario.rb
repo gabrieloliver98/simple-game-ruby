@@ -14,7 +14,7 @@ class RandRoom < Scene
     puts "You entered in a new room"
     puts "You stil not has the portal key"
     puts "Now you will fight with #{@enemies} enemies"
-    fight = Fight.new()
+    fight = Fight.new(hero, @enemies)
     alive = fight(@enemies)
     return alive
   end

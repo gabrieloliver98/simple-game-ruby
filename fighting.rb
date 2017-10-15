@@ -1,5 +1,10 @@
 class Fight
+  def initialize(player, quant_aliens)
+    @player = player
+    @quant_aliens = quant_aliens
+  end
 
+  
 end
 
 class Being
