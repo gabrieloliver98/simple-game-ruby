@@ -10,7 +10,7 @@ class RandRoom < Scene
     @enemies = rand(0..10)
   end
 
-  def enter()
+  def enter(hero)
     puts "You entered in a new room"
     puts "You stil not has the portal key"
     puts "Now you will fight with #{@enemies} enemies"
@@ -21,7 +21,7 @@ class RandRoom < Scene
 end
 
 class InitialRoom < Scene
-  def self.enter()
+  def self.enter(hero)
     puts "You woke up in a stange place."
     puts "You see a couple of aliens."
     puts "They explain to you that they have captured you."
@@ -33,7 +33,7 @@ class InitialRoom < Scene
 end
 
 class FinalRoom < Scene
-  def self.enter()
+  def self.enter(hero)
     puts "You achived the portal key"
     puts "Now, you can get back home"
     puts "Thanks for playing this game"
