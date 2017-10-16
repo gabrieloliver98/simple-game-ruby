@@ -16,7 +16,17 @@ end
 
 class Being
   attr_accessor :health, :power
+  def hit(enemie)
+    enemie.power -= self.power
+  end
 
+  def is_alive(being)
+    being.heath > 0
+  end
+
+  def to_s(op1, op2)
+    puts "You has #{op1.health} of health and the alien #{op2.health}"
+  end
 end
 
 class Player < Being
