@@ -7,15 +7,16 @@ end
 class RandRoom < Scene
   attr_accessor :portal_key
   def initialize()
-    @enemies = rand(0..10)
+    @enemie = Alien.new()
   end
 
   def enter(hero)
     puts "You entered in a new room"
     puts "You stil not has the portal key"
-    puts "Now you will fight with #{@enemies} enemies"
-    fight = Fight.new(hero, @enemies)
-    alive = fight(@enemies)
+    puts "Now you will fight with one enemie"
+    fight = Fight.new()
+    fight.fight(hero, @enemie)
+    alive = fight.is_alive()
     return alive
   end
 end
