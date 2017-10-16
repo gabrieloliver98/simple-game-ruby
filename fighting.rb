@@ -1,5 +1,6 @@
 class Fight
-  def initialize(player, quant_aliens)
+  # corrigir conforme scenario
+  def initialize(player, enemie)
     @player = player
     @quant_aliens = quant_aliens
   end
