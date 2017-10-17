@@ -35,10 +35,14 @@ class InitialRoom < Scene
   end
 
   def result(command)
+    command.downcase!
     if command == "attack"
       puts "The alines run away, but you still without your portal key"
-    elsif command == "Cry"
+    elsif command == "cry"
       puts "The aliens kill you"
+      puts "You are dying"
+      puts "When...suddenly..."
+      puts "You DIE"
     elsif command == "meditate"
       puts "You active all your seven chakras, and you transform youself in your own portal key"
       puts "Now you can get back home"

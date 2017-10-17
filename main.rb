@@ -10,8 +10,7 @@ class Engine
     InitialRoom.enter()
     where_is_portalkey = rand(1..10)
     count = 1
-
-    # fazer sistema de mortes atraves do alive
+    
     while self.hero.portal_key == false
         current_room = RandRoom.new()
         if where_is_portalkey == count
