@@ -1,22 +1,23 @@
 class Fight
   # corrigir conforme scenario
-  def initialize(player, enemie)
+  def initialize()
     @player = player
     @quant_aliens = quant_aliens
   end
 
-  def fight
-    @quant_aliens.each {|x| alien[x] = Alien.new() }
-    count = 1
-    while @player.health > 0 ||
-      @player.hit(@quant_aliens - count)
-
+  def fight(op1, op2)
+    while op1.is_alive && op2.is_alive
+      op1.hit(op2)
+      op2.hit(op1)
+      puts op1
+      puts op2
     end
+    winner(op1, op2)
   end
 
   def winner(op1, op2)
     if op1.is_alive
-      puts "The #{op1.name} won this battle!" 
+      puts "The #{op1.name} won this battle!"
     elsif op2.is_alive
       puts "The #{op2.name} won this battle!"
     else
