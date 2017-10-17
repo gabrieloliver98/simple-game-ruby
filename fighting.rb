@@ -34,8 +34,8 @@ class Being
     enemie.power -= self.power
   end
 
-  def is_alive(being)
-    being.heath > 0
+  def is_alive()
+    self.health > 0
   end
 
   def to_s(op1, op2)
