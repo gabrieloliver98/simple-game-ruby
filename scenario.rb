@@ -1,7 +1,9 @@
 require '.\fighting.rb'
 
 class Scene
-
+  def enter()
+    puts "If this message is being showed, this room is with a problem :)"
+  end
 end
 
 class RandRoom < Scene
@@ -38,6 +40,5 @@ class FinalRoom < Scene
     puts "Now, you can get back home"
     puts "Thanks for playing this game"
     puts "See you next time!"
-
   end
 end
