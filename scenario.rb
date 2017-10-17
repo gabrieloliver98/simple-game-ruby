@@ -30,11 +30,12 @@ class InitialRoom < Scene
     puts "And they want you to explain how to make your techology of portal key"
     puts "You can't do that, so they tell if you not cooperate, they don't will give your portal key back."
     puts "What will you do?"
-    puts ">"
-    self.result($stdin.gets.chomp)
+    print ">"
+    command = $stdin.gets.chomp
+    result(command)
   end
 
-  def result(command)
+  def self.result(command)
     command.downcase!
     if command == "attack"
       puts "The alines run away, but you still without your portal key"
