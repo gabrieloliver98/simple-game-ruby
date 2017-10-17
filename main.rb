@@ -1,5 +1,5 @@
-require 'scenario.rb'
-require 'fighting.rb'
+require '.\scenario.rb'
+require '.\fighting.rb'
 
 class Engine
   def initialize()
@@ -17,6 +17,7 @@ class Engine
         if where_is_portalkey == count
           current_room.portal_key == true
         end
+        break if current_room.enter()
         count += 1
     end
     FinalRoom.enter()

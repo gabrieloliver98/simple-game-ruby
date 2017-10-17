@@ -1,4 +1,4 @@
-require 'fighting.cs'
+require '.\fighting.rb'
 
 class Scene
 
