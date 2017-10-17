@@ -31,7 +31,7 @@ end
 class Being
   attr_accessor :name, :health, :power
   def hit(enemie)
-    enemie.power -= self.power
+    enemie.health -= self.power
   end
 
   def is_alive()
