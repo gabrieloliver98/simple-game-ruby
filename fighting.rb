@@ -16,11 +16,11 @@ class Fight
 
   def winner(op1, op2)
     if op1.is_alive
-      op1.
+      puts "The #{op1.name} won this battle!" 
     elsif op2.is_alive
-
+      puts "The #{op2.name} won this battle!"
     else
-
+      puts "It's a tie!"
     end
   end
 end
