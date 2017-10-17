@@ -31,6 +31,22 @@ class InitialRoom < Scene
     puts "You can't do that, so they tell if you not cooperate, they don't will give your portal key back."
     puts "What will you do?"
     puts ">"
+    self.result($stdin.gets.chomp)
+  end
+
+  def result(command)
+    if command == "attack"
+      puts "The alines run away, but you still without your portal key"
+    elsif command == "Cry"
+      puts "The aliens kill you"
+    elsif command == "meditate"
+      puts "You active all your seven chakras, and you transform youself in your own portal key"
+      puts "Now you can get back home"
+      puts "You win in the best way possible"
+      puts "Meditation is important"
+    else
+      puts "Learn how to write :P"
+    end
   end
 end
 
