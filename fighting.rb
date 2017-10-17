@@ -1,9 +1,10 @@
 class Fight
-  # corrigir conforme scenario
+  =begin
   def initialize()
     @player = player
     @quant_aliens = quant_aliens
   end
+  =end
 
   def fight(op1, op2)
     while op1.is_alive && op2.is_alive
