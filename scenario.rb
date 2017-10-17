@@ -14,7 +14,7 @@ class RandRoom < Scene
 
   def enter(hero)
     puts "You entered in a new room"
-    puts "You stil not has the portal key"
+    puts "But you don't have the portal key"
     puts "Now you will fight with one enemie"
     fight = Fight.new()
     alive = fight.fight(hero, @enemie)
@@ -25,7 +25,7 @@ end
 class InitialRoom < Scene
   def self.enter()
     puts "You woke up in a stange place."
-    puts "You see a couple of aliens."
+    puts "You see some aliens."
     puts "They explain to you that they have captured you."
     puts "And they want you to explain how to make your techology of portal key"
     puts "You can't do that, so they tell if you not cooperate, they don't will give your portal key back."
@@ -38,7 +38,7 @@ class InitialRoom < Scene
   def self.result(command)
     command.downcase!
     if command == "attack"
-      puts "The alines run away, but you still without your portal key"
+      puts "The aliens run way, but you still without your portal key"
     elsif command == "cry"
       puts "The aliens kill you"
       puts "You are dying"
