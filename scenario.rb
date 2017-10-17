@@ -40,14 +40,16 @@ class InitialRoom < Scene
     if command == "attack"
       puts "The aliens run way, but you still without your portal key"
     elsif command == "cry"
-      puts "The aliens kill you"
+      puts "The aliens will kill you"
       puts "You are dying"
       puts "When...suddenly..."
       puts "You DIE"
     elsif command == "meditate"
       puts "You active all your seven chakras, and you transform youself in your own portal key"
+
       FinalRoom.enter()
       puts "Meditation is important"
+
     else
       puts "Learn how to write :P"
     end
