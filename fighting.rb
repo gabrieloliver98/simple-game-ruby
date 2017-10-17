@@ -46,6 +46,7 @@ end
 class Player < Being
   attr_accessor :portal_key
   def initialize()
+    @portal_key = false
     @name = 'Hero'
     @health = 100
     @power = 20
