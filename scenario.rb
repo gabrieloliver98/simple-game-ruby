@@ -46,8 +46,7 @@ class InitialRoom < Scene
       puts "You DIE"
     elsif command == "meditate"
       puts "You active all your seven chakras, and you transform youself in your own portal key"
-      puts "Now you can get back home"
-      puts "You win in the best way possible"
+      FinalRoom.enter()
       puts "Meditation is important"
     else
       puts "Learn how to write :P"
