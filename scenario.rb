@@ -23,7 +23,7 @@ class RandRoom < Scene
 end
 
 class InitialRoom < Scene
-  def self.enter(hero)
+  def self.enter()
     puts "You woke up in a stange place."
     puts "You see a couple of aliens."
     puts "They explain to you that they have captured you."
@@ -35,7 +35,7 @@ class InitialRoom < Scene
 end
 
 class FinalRoom < Scene
-  def self.enter(hero)
+  def self.enter()
     puts "You achived the portal key"
     puts "Now, you can get back home"
     puts "Thanks for playing this game"
