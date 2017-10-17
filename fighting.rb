@@ -13,10 +13,20 @@ class Fight
 
     end
   end
+
+  def winner(op1, op2)
+    if op1.is_alive
+      op1.
+    elsif op2.is_alive
+
+    else
+
+    end
+  end
 end
 
 class Being
-  attr_accessor :health, :power
+  attr_accessor :name, :health, :power
   def hit(enemie)
     enemie.power -= self.power
   end
@@ -26,12 +36,13 @@ class Being
   end
 
   def to_s(op1, op2)
-    puts "You has #{op1.health} of health and the alien #{op2.health}"
+    "You has #{op1.health} of health and the alien #{op2.health}"
   end
 end
 
 class Player < Being
   def initialize()
+    @name = 'Hero'
     @health = 100
     @power = 20
   end
@@ -39,6 +50,7 @@ end
 
 class Alien < Being
   def initialize()
+    @name = 'Hero'
     @health = 20
     @power = 5
   end
