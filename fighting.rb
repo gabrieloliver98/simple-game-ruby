@@ -14,6 +14,7 @@ class Fight
       puts op2
     end
     winner(op1, op2)
+    return op1.is_alive
   end
 
   def winner(op1, op2)

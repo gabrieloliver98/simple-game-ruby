@@ -15,8 +15,7 @@ class RandRoom < Scene
     puts "You stil not has the portal key"
     puts "Now you will fight with one enemie"
     fight = Fight.new()
-    fight.fight(hero, @enemie)
-    alive = fight.is_alive()
+    alive = fight.fight(hero, @enemie)
     return alive
   end
 end
