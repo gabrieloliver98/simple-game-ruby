@@ -38,8 +38,8 @@ class Being
     self.health > 0
   end
 
-  def to_s(op1, op2)
-    "You has #{op1.health} of health and the alien #{op2.health}"
+  def to_s()
+    "The #{self.name} has #{self.health} of health"
   end
 end
 
