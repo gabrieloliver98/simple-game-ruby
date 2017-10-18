@@ -20,9 +20,9 @@ class Fight
 
   def winner(op1, op2)
     if op1.is_alive
-      puts "\nThe #{op1.name} WON this battle!"
+      puts "The #{op1.name} WON this battle!"
     elsif op2.is_alive
-      puts "\nThe #{op2.name} WON this battle!"
+      puts "The #{op2.name} WON this battle!"
     else
       puts "\nIt's a tie!"
       puts "But you has DIED..."
