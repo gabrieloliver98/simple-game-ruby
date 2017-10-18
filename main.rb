@@ -29,3 +29,4 @@ a_game = Engine.new()
 a_game.play
 
 # Soon, this game will be updated for a most powerful thing
+# This is version 1.0 of the game
