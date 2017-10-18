@@ -2,7 +2,7 @@ require '.\fighting.rb'
 
 class Scene
   def enter()
-    puts "If this message is being showed, this room is with a problem :)"
+    puts "\nIf this message is being showed, this room is with a problem :)"
   end
 
   def result()
@@ -16,7 +16,7 @@ class Scene
       puts "The aliens will kill you"
       puts "You are dying"
       puts "When...suddenly..."
-      puts "You DIE"
+      puts "\nYou DIE"
       exit(0)
     else
       puts "Learn how to write :P"
@@ -31,10 +31,11 @@ class RandRoom < Scene
   end
 
   def enter(hero)
-    puts "You entered in a new room"
+    puts "\nYou entered in a new room"
     puts "But you don't have the portal key"
-    puts "Now you will fight with one enemie"
+    puts "\nNow you will fight with one enemie"
     result()
+    puts "The fight will BEGIN:"
     current_fight = Fight.new()
     hero = current_fight.fight(hero, @enemie)
     return hero
@@ -54,7 +55,7 @@ end
 
 class FinalRoom < Scene
   def initialize()
-    puts "You achived the portal key"
+    puts "\nYou achived the portal key"
     puts "Now, you can get back home"
     puts "Thanks for playing this game"
     puts "See you next time!"
