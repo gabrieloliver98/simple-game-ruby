@@ -25,6 +25,8 @@ class Fight
       puts "\nThe #{op2.name} WON this battle!"
     else
       puts "\nIt's a tie!"
+      puts "But you has DIED..."
+      exit(0)
     end
   end
 end
