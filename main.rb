@@ -1,11 +1,13 @@
 require '.\scenario.rb'
 require '.\fighting.rb'
 
+# Classa that runs all the game
 class Engine
   def initialize()
     @hero = Player.new()
   end
 
+  # That method executes all the code for generate all the game.
   def play()
     InitialRoom.new()
     where_is_portalkey = rand(1..10)
