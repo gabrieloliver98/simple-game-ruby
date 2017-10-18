@@ -10,14 +10,14 @@ class Engine
     InitialRoom.new()
     where_is_portalkey = rand(1..10)
     count = 1
-
-    while @hero.portal_key == false || @hero.is_alive()
+    while @hero.portal_key == false && @hero.is_alive()
         current_room = RandRoom.new()
-        if where_is_portalkey == count
-          current_room.portal_key == true
+        if count == where_is_portalkey
+          @hero.portal_key = true
         end
-        break if current_room.enter(@hero)
+        current_room.enter(@hero)
         count += 1
+
     end
     FinalRoom.new()
   end
