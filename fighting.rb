@@ -12,6 +12,7 @@ class Fight
       op2.hit(op1)
       puts op1
       puts op2
+
     end
     winner(op1, op2)
     return op1.is_alive
@@ -19,11 +20,11 @@ class Fight
 
   def winner(op1, op2)
     if op1.is_alive
-      puts "The #{op1.name} won this battle!"
+      puts "\nThe #{op1.name} WON this battle!"
     elsif op2.is_alive
-      puts "The #{op2.name} won this battle!"
+      puts "\nThe #{op2.name} WON this battle!"
     else
-      puts "It's a tie!"
+      puts "\nIt's a tie!"
     end
   end
 end
@@ -39,7 +40,7 @@ class Being
   end
 
   def to_s()
-    "The #{self.name} has #{self.health} of health"
+    "\s\sThe #{self.name} has #{self.health} of health"
   end
 end
 
