@@ -26,7 +26,6 @@ class Scene
 end
 
 class RandRoom < Scene
-  attr_accessor :portal_key
   def initialize()
     @enemie = Alien.new()
   end
@@ -37,8 +36,8 @@ class RandRoom < Scene
     puts "Now you will fight with one enemie"
     result()
     current_fight = Fight.new()
-    alive = current_fight.fight(hero, @enemie)
-    return alive
+    hero = current_fight.fight(hero, @enemie)
+    return hero
   end
 end
 
