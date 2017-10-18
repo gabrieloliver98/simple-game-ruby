@@ -7,7 +7,7 @@ class Engine
   end
 
   def play()
-    InitialRoom.enter()
+    InitialRoom.new()
     where_is_portalkey = rand(1..10)
     count = 1
 
@@ -19,7 +19,7 @@ class Engine
         break if current_room.enter(@hero)
         count += 1
     end
-    FinalRoom.enter()
+    FinalRoom.new()
   end
 end
 
